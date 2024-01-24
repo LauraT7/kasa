@@ -1,0 +1,37 @@
+.description__panel {
+  margin-bottom: 1rem;
+  flex-basis: 50%;
+  overflow: hidden;
+}
+.description__panel p {
+  margin-block: 0;
+}
+.description__panel .description__header {
+  background-color: #ff6060;
+  color: white;
+  padding: 0.2em 1em;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.description__panel .description__header i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.description__panel .description__content {
+  color: #ff6060;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  position: relative;
+  top: -0.3rem;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+}
+.description__panel .description__content.hidden {
+  transform: translateY(-100%);
+}
+.description__panel .description__content.visible {
+  transform: translateY(0);
+}/*# sourceMappingURL=Description.css.map */

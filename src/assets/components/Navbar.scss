@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  color: #ff6060;
+  font-weight: 500;
+
+
+& a {
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  color: #ff6060;
+
+& active {
+  border-bottom: 2px solid #ff6060;
+}
+// active ne marche pas pour l'instant, je ne sais pas pq
+
+&:hover {
+  border-bottom: 2px solid #ff6060;
+}
+
+
+
+}}

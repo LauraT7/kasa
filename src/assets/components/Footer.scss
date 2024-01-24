@@ -1,0 +1,18 @@
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    min-height: 100px;
+    margin-inline: -20%;
+
+    & img {
+        padding-inline: 80%;
+        color: white;
+        width: 5rem;
+    }
+}

@@ -1,0 +1,19 @@
+.apartmentgrid {
+  background-color: rgb(205, 201, 201);
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 30px;
+  min-height: 50vw;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (width <= 768px) {
+  .apartmentgrid {
+    justify-content: center;
+    background-color: transparent;
+    padding: 0;
+  }
+}/*# sourceMappingURL=ApartmentGrid.css.map */

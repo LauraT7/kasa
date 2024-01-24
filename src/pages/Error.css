@@ -1,0 +1,16 @@
+.error-page {
+  color: #ff6060;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+.error-page h1 {
+  font-size: 10rem;
+  margin-bottom: 0.5em;
+}
+.error-page h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+.error-page a {
+  color: #ff6060;
+}/*# sourceMappingURL=Error.css.map */

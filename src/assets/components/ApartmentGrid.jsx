@@ -19,13 +19,10 @@ function ApartmentGrid() {
     .catch((error) => console.error("Une erreur s'est produite : " + error))}
   return (
     <div className='apartmentgrid'>
-      apartments: {JSON.stringify(apartments)}
-        <Apartment />
-        <Apartment />
-        <Apartment />
-        <Apartment />
-        <Apartment />
-        <Apartment />
+    {apartments.map((apartment) => (
+      <Apartment title={apartment.title} imageUrl={apartment.cover}/>
+    ))}
+    
     </div>
   )
 }

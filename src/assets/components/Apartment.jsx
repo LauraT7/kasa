@@ -6,7 +6,9 @@ function Apartment(props) {
   return (
     <div className='apartment'>
       <img src={props.imageUrl} alt=""/>
-      <Link to="/flat"><h3>{props.title}</h3></Link>
+      <Link to="/flat" state={{
+        apartmentId: props.id
+      }}><h3>{props.title}</h3></Link>
     </div>
   )
 }

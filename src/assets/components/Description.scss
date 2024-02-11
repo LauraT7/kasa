@@ -1,5 +1,5 @@
 .description__panel {
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     flex-basis: 50%;
     overflow: hidden;
     p {
@@ -9,7 +9,7 @@
       background-color: #ff6060;
       color: white;
       padding: 0.2em 1em;
-      border-radius: 0.7rem;
+      border-radius: 0.2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;

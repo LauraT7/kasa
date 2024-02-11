@@ -9,7 +9,7 @@ import Description from "../assets/components/Description"
  
 function Flat() {
   const location = useLocation()
-  console.log("location", location)
+  // console.log("location", location)
   const flat = useApartment()
   if (flat == null) return <div>Loading...</div>
   // useEffect(fetchApartmentData, [])

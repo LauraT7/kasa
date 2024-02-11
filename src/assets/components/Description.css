@@ -2,36 +2,46 @@
   margin-bottom: 1rem;
   flex-basis: 50%;
   overflow: hidden;
+  transition: padding-bottom 0.3s ease-in-out; /* Ajoutez cette transition si vous souhaitez animer le padding */
 }
-.description__panel p {
-  margin-block: 0;
+
+.description__panel.collapsed {
+  margin-bottom: -2rem; /* Ajustez selon vos besoins pour l'état fermé */
 }
-.description__panel .description__header {
+
+.description__header {
   background-color: #ff6060;
   color: white;
   padding: 0.2em 1em;
-  border-radius: 0.7rem;
+  border-radius: 0.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
-.description__panel .description__header i {
+
+.description__header i {
   font-size: 2rem;
-  cursor: pointer;
 }
-.description__panel .description__content {
+
+.description__content {
   color: #ff6060;
   padding: 1rem;
   border-radius: 0.7rem;
   position: relative;
   top: -0.3rem;
   z-index: -1;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; /* Transition pour opacité et translation */
+  opacity: 0; /* Initialisé à invisible */
+  max-height: 0; /* Empêche l'espace d'être pris */
+  overflow: hidden;
 }
-.description__panel .description__content.hidden {
-  transform: translateY(-100%);
+
+.description__content.visible {
+  opacity: 1;
+  max-height: 500px; /* Ajustez en fonction du contenu attendu */
 }
-.description__panel .description__content.visible {
-  transform: translateY(0);
-}/*# sourceMappingURL=Description.css.map */
+
+.description__content.hidden {
+  pointer-events: none;
+}

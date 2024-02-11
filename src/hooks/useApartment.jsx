@@ -12,10 +12,10 @@ export function useApartment() {
     fetch("/apartment.json", { signal: abortController.signal })
       .then((res) => res.json())
       .then((flats) => {
-        console.log("Résultats récupérés:", flats);
+        // console.log("Résultats récupérés:", flats);
         if (isMounted) {
           const flat = flats.find((flat) => flat.id === location.state.apartmentId)
-          console.log("flat de cet élément est :", flat)
+          // console.log("flat de cet élément est :", flat)
           setFlat(flat)
         }
       })

@@ -5,6 +5,13 @@
   padding: 1rem 2rem;
 }
 
+@media screen and (width <= 768px) {
+.navbar__logo img {
+  width: auto;
+  height: auto;
+}
+}
+
 .navbar__links {
   display: flex;
   justify-content: flex-end;

@@ -39,6 +39,12 @@
   border-radius: 15px;
 }
 
+@media screen and (max-width: 910px) {
+  .apartment {
+    flex-basis: 45%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .apartment {
     flex-basis: 100%;

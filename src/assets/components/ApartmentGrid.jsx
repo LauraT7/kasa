@@ -10,7 +10,7 @@ function ApartmentGrid() {
   }, [])
 
   function fetchApartments() {
-    fetch("/apartment.json")
+    fetch("./apartment.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok')

@@ -1,33 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom"
-import App from './App.jsx'
-import About from './pages/About.jsx'
-import Flat from './pages/Flat.jsx'
-import Error from './pages/Error.jsx'
-import './index.css'
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <Error />
-  },
-  {
-    path: "/flat",
-    element: <Flat />
-  },
-  {
-    path: "/about",
-    element: <About />
-  }
-]);
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HashRouter, Routes, Route } from "react-router-dom";
+import App from './App';
+import About from './pages/About';
+import Flat from './pages/Flat';
+import Error from './pages/Error';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/flat" element={<Flat />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </HashRouter>
+  </React.StrictMode>
+);

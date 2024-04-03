@@ -1,35 +1,35 @@
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react"
 
-export function useApartment() {
-  const [flat, setFlat] = useState(null);
-  const location = useLocation();
+
+// Modification de la signature de useApartment pour accepter un paramètre flatId
+export function useApartment(flatId) {
+  const [flat, setFlat] = useState(null)
 
   useEffect(() => {
-    let isMounted = true;
-    const abortController = new AbortController();
-  
+    let isMounted = true
+    const abortController = new AbortController()
+
     fetch("/apartment.json", { signal: abortController.signal })
       .then((res) => res.json())
       .then((flats) => {
-        // console.log("Résultats récupérés:", flats);
         if (isMounted) {
-          const flat = flats.find((flat) => flat.id === location.state.apartmentId)
-          // console.log("flat de cet élément est :", flat)
+          // Utiliser le paramètre flatId pour trouver l'appartement correspondant
+          const flat = flats.find((flat) => flat.id === flatId)
           setFlat(flat)
         }
       })
       .catch((error) => {
         if (error.name !== 'AbortError') {
-          console.error(error);
+          console.error(error)
         }
       });
-  
+
     return () => {
-      abortController.abort();
-      isMounted = false;
+      abortController.abort()
+      isMounted = false
     };
-  }, []);
-  
+  // Ajouter flatId comme dépendance pour réexécuter l'effet si flatId change
+  }, [flatId]);
+
   return flat;
 }

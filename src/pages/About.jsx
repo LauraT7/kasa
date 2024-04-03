@@ -11,6 +11,7 @@ function about() {
     <Navbar />
     <div>
       <img className="banner--about" src={bannerAbout} alt="" />
+      {/* Le titre et le contenu sont passés comme propriétés au composant Description */}
       <Description title="Fiabilité" content="Ceci est mon content sur la fiabilité du site KASA"/>
       <Description title="Respect" content=""/>
       <Description title="Service" content=""/>

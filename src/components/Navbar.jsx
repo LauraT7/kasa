@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import './Navbar.css'
-import logo from '../../images/logokasa.png'
+import logo from '../assets/images/logokasa.png'
 
 // Définition du composant Navbar
 // Ce composant représente la barre de navigation de l'application.

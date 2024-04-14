@@ -1,11 +1,12 @@
 import React from "react"
 import { useNavigate, useParams } from "react-router-dom"
-import Navbar from '../assets/components/Navbar'
-import Footer from '../assets/components/Footer'
-import { ImageBanner } from "../assets/components/ImageBanner"
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import { ImageBanner } from "../components/ImageBanner"
 import { useApartment } from "../hooks/useApartment"
-import { ApartmentHeader } from "../assets/components/ApartmentHeader"
-import Description from "../assets/components/Description"
+import { ApartmentHeader } from "../components/ApartmentHeader"
+import Description from "../components/Description"
+import './Flat.css'
 
 function Flat() {
   const navigate = useNavigate()
@@ -27,8 +28,10 @@ function Flat() {
       <Navbar />
       <ImageBanner pictures={flat.pictures} />
       <ApartmentHeader flat={flat} />
+      <div className="description_display">
       <Description title="Description" content={flat.description} />
       <Description title="Equipements" content={flat.equipments.map((eq, i) => <li key={i}>{eq}</li>)} />
+      </div>
       <Footer />
     </div>
   )

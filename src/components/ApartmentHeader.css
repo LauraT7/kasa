@@ -8,45 +8,50 @@
     flex-direction: column;
   }
 }
-.apart__header .apart__title {
+.apart__title {
   flex-grow: 1;
+  
 }
-.apart__header .apart__owner {
+.apart__title h1 {
+  color:#ff6060;
+}
+.apart__owner {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  color:#ff6060;
 }
+
 @media screen and (width <= 768px) {
-  .apart__header .apart__owner {
+  .apart__owner {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-.apart__header .apart__owner__details {
+.apart__owner__details {
   display: flex;
   gap: 0.5rem;
 }
 @media screen and (width <= 768px) {
-  .apart__header .apart__owner__details {
+  .apart__owner__details {
     order: 1;
   }
 }
-.apart__header .apart__owner__badge img {
+.apart__owner__badge img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   background-color: grey;
 }
-.apart__header .apart__owner__stars {
+.apart__owner__stars {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
   color: grey;
 }
-.apart__header .apart__owner__stars * {
+.apart__owner__stars * {
   font-size: 2rem;
 }
-.apart__header .apart__owner__stars .on {
+.on {
   color: coral;
 }
 .apart__header h1 {
@@ -59,12 +64,12 @@
   margin-bottom: 0.2em;
   font-size: 20px;
 }
-.apart__header .apart__tags {
+.apart__tags {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   gap: 1rem;
 }
-.apart__header .apart__tags span {
+.apart__tags span {
   background-color: #ff6060;
   color: white;
   padding: 0.3em 0.5em;

@@ -8,10 +8,16 @@ footer {
   flex-wrap: wrap;
   padding: 2rem;
   min-height: 100px;
-  margin-inline: -20%;
+  margin-inline: -12.5%;
 }
 footer img {
-  padding-inline: 80%;
+  padding-inline: 45%;
   color: white;
   width: 5rem;
+}
+
+@media screen and (width <= 768px) {
+  footer img {
+    width: 25rem;
+  }
 }/*# sourceMappingURL=Footer.css.map */

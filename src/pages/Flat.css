@@ -1,7 +1,12 @@
 .description_display {
     display: flex;
-    gap: 1rem
+    
 }
+
+.description_display description__header {
+    margin: 1rem 1rem;
+}
+
 
 @media screen and (width <= 768px) {
     .description_display {

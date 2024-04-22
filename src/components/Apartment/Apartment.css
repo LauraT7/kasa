@@ -1,0 +1,53 @@
+.apartment {
+  position: relative;
+  flex-basis: 30%;
+  border-radius: 15px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.content-overlay {
+  border-radius: 15px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  z-index: 2;
+}
+
+.apartment h3 {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.apartment img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+@media screen and (width <= 910px) {
+  .apartment {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (width <= 415px) {
+  .apartment {
+    flex-basis: 100%;
+  }
+}
+

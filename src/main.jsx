@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import App from './App'
-import About from './pages/About'
-import Flat from './pages/Flat'
-import Error from './pages/Error'
+import About from './pages/About/About'
+import Flat from './pages/Flat/Flat'
+import Error from './pages/Error/Error'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

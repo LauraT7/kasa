@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Description from '../components/Description'
-import bannerAbout from '../assets/images/bannerAbout.png'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
+import Description from '../../components/Description/Description'
+import bannerAbout from '../../assets/images/bannerAbout.png'
 import './About.css'
 
 function about() {
@@ -11,7 +11,7 @@ function about() {
     <Navbar />
     <div>
       <img className="banner--about" src={bannerAbout} alt="" />
-      {/* Le titre et le contenu sont passés comme propriétés au composant Description */}
+      {/* Le titre et le contenu sont passés comme propriétés au composant description */}
       <Description title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."/>
       <Description title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>
       <Description title="Service" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>

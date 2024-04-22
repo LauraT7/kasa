@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './ApartmentGrid.css'
-import Apartment from './Apartment.jsx'
+import Apartment from '../Apartment/Apartment.jsx'
 
 function ApartmentGrid() {
   const [apartments, setApartments] = useState([])

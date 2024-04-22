@@ -9,15 +9,11 @@
   .navbar {
     padding: 1rem 0;
   }
-
-  .navbar__logo {
-    width: 50%;
+  .navbar img {
+    width: 80%;
   }
-
-  .navbar__logo img {
-    width: 100%;
-  }
-  } 
+}
+   
 .navbar__links {
   display: flex;
   justify-content: flex-end;
@@ -35,4 +31,10 @@
 }
 .navbar__links a:hover {
   border-bottom: 2px solid black;
-}/*# sourceMappingURL=Navbar.css.map */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__links a {
+    text-transform: uppercase;
+  }
+}

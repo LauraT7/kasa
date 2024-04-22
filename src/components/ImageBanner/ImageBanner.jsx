@@ -53,7 +53,7 @@ export function ImageBanner(props) {
     <div className="image__banner">
       <div className="image__container">{getCarouselOrDefaultImage()}</div>
       {/* Affiche les boutons de navigation s'il y a des images disponibles */}
-      {arePicturesAvailable() && (
+      {arePicturesAvailable() && pictures.length > 1 && (
         <>
           <button className="btn btn-previous" onClick={moveToPrevious}>
             <i className="fas fa-chevron-left"></i>

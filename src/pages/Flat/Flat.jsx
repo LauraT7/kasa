@@ -1,11 +1,11 @@
 import React from "react"
 import { useNavigate, useParams } from "react-router-dom"
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import { ImageBanner } from "../components/ImageBanner"
-import { useApartment } from "../hooks/useApartment"
-import { ApartmentHeader } from "../components/ApartmentHeader"
-import Description from "../components/Description"
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
+import { ImageBanner } from "../../components/ImageBanner/ImageBanner"
+import { useApartment } from "../../hooks/useApartment"
+import { ApartmentHeader } from "../../components/ApartmentHeader/ApartmentHeader"
+import Description from "../../components/Description/Description"
 import './Flat.css'
 
 function Flat() {

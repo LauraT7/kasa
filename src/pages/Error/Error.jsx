@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 import './Error.css'
 
 // Définition du composant Error, qui représente la page d'erreur 404

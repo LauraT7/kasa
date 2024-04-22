@@ -8,7 +8,6 @@ footer {
   flex-wrap: wrap;
   padding: 2rem;
   min-height: 100px;
-  margin-inline: -12.5%;
 }
 footer img {
   padding-inline: 45%;
@@ -18,6 +17,7 @@ footer img {
 
 @media screen and (width <= 768px) {
   footer img {
-    width: 25rem;
+    width: 10rem;
+    padding-inline: 30%;
   }
 }/*# sourceMappingURL=Footer.css.map */

@@ -1,7 +1,10 @@
 .banner--about {
-  height: 10rem;
+  height: 100%;
   border-radius: 15px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}/*# sourceMappingURL=About.css.map */
+     /* background-image: url('../../assets/images/bannerAbout.png'); */
+}
+
+/*# sourceMappingURL=About.css.map */

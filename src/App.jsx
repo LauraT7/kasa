@@ -4,6 +4,7 @@ import Banner from './components/Banner/Banner'
 import ApartmentGrid from './components/ApartmentGrid/ApartmentGrid'
 import Footer from './components/Footer/Footer'
 import './App.css'
+import bannerImg from './assets/images/banner.png';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       {/* Composant de la barre de navigation */}
       <Navbar />
       {/* Composant de la bannière */}
-      <Banner />
+      <Banner title="Chez vous, partout et ailleurs" backgroundImg={bannerImg} />
       {/* Composant de la grille d'appartements */}
       <ApartmentGrid />
       {/* Composant du pied de page */}
